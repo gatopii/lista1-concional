@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <script>
+        let saldomedio = + prompt('Qual seu saldo médio?')
+        const TrintaPorcento = saldomedio * (30 / 100) 
+        const QuarentaPorcento = saldomedio * (40 / 100) 
+        const CInquentaPorcento = saldomedio * (50 / 100) 
+        if (saldomedio <= 500) {
+            document.write(`Voce nao tem crédito, seu saldo é de ${saldomedio}R$`)
+        }
+        else if (saldomedio > 500 && saldomedio <= 1000) {
+            document.write(`Voce tem 30% de crédito, seu saldo com o crédito é: ${TrintaPorcento}`)
+        }
+        else if (saldomedio > 1000 && saldomedio <= 3000) {
+            document.write(`Voce tem 40% de crédito, seu saldo com o crédito é: ${QuarentaPorcento}`)
+        }
+        else {
+            document.write(`Voce tem 50% de crédito, seu saldo com o crédito é: ${CInquentaPorcento}`)
+        }
+    </script>
+</body>
+
+</html>

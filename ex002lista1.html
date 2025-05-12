@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <script>
+
+        let litros = +prompt('Quantos litros foram abastecidos?')
+        let preco = +prompt('Qual o preço do litro?')
+
+        if (litros < 20) {
+            let desconta1 = (preco * 1.04) * litros
+            alert('Voce abasteceus menos de 20 litros, o valor com desconto é de R$: ' + desconta1.toFixed(2))
+        } else {
+            let desconta2 = (preco * 1.06) * litros
+            alert('Voce abasteceu mais de 20 litros, o valor a ser pago com 6% de desconto é: ' + desconta2)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <script>
+        let valor = + prompt('Informe o valor')
+        let lucro
+        if (valor < 10) {
+            lucro = valor * 0.7
+        } else if (valor < 30) {
+            lucro = valor * 0.5
+        } else if (valor < 50) {
+            lucro = valor * 0.4
+        } else {
+            lucro = valor * 0.3
+        }
+        let valorVenda=lucro+valor
+        document.write(`O valor do lucro é: ${lucro}, e o valor da venda é: ${valorVenda}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <script>
+
+        const peso = +prompt('Informe seu peso');
+        const altura = +prompt('Informe sua altura em centimetros');
+        const alturametroconversor = altura/100
+        const calculoIMC = peso / (alturametroconversor * alturametroconversor);
+
+        if (calculoIMC < 20) {
+            document.write(`Você está abaixo do peso, seu IMC é: ${calculoIMC.toFixed(2)}`);
+        } else if (calculoIMC >= 20 && calculoIMC < 25) {
+            document.write(`Você está com um peso normal, seu IMC é: ${calculoIMC.toFixed(2)}`);
+        } else if (calculoIMC >= 25 && calculoIMC < 30) {
+            document.write(`Você está acima do peso, seu IMC é: ${calculoIMC.toFixed(2)}`);
+        } else if (calculoIMC >= 30 && calculoIMC < 40) {
+            document.write(`Você está obeso, seu IMC é: ${calculoIMC.toFixed(2)}`);
+        } else {
+            document.write(`Você está em situação de obesidade mórbida, seu IMC é: ${calculoIMC.toFixed(2)}`);
+        }
+
+    </script>
+</body>
+
+</html>

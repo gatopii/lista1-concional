@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #212121; color: white;">
+    <script>
+        const idade = + prompt('qual sua idade')
+
+        if(idade <= 10){
+            document.write(`Voce deverá pagar R$30`)
+        }
+        else if(idade <= 29){
+            document.write(`Voce deverá pagar R$60`)
+        }
+        else if(idade <= 45){
+            document.write(`Voce deverá pagar R$120`)
+        }
+        else if(idade <= 59){
+            document.write(`Voce deverá pagar R$150`)
+        }
+        else if(idade <= 65){
+            document.write(`Voce deverá pagar R$250`)
+        }
+        else{
+            document.write(`Voce deverá pagar R$400`)
+        }
+    </script>
+</body>
+
+</html>
