@@ -10,16 +10,17 @@
 <body style="background-color: #212121; color: white;">
     <script>
         let valor = + prompt('Informe o valor')
-        let lucro
+        let mutiplicadorLucro
         if (valor < 10) {
-            lucro = valor * 0.7
+            mutiplicadorLucro = 0.7
         } else if (valor < 30) {
-            lucro = valor * 0.5
+            mutiplicadorLucro = 0.5
         } else if (valor < 50) {
-            lucro = valor * 0.4
+            mutiplicadorLucro = 0.4
         } else {
-            lucro = valor * 0.3
+            mutiplicadorLucro = 0.3
         }
+        const lucro = valor * mutiplicadorLucro;
         let valorVenda=lucro+valor
         document.write(`O valor do lucro é: ${lucro}, e o valor da venda é: ${valorVenda}`)
     </script>
